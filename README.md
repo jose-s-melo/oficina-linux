@@ -54,7 +54,25 @@ bind-key C-a send-prefix
 
 Agora o atalho `ctrl + a`, que é mais confortável, irá subtituir o `ctrl + b`.
 
+## 6. Personalização
 
+### 6.1 NerdFonts
+
+Uma ótima forma de personalizar o tmux é usar NerdFonts, elas são fontes com
+vários símbolos especiais, esses símbolos especiais representam icones, seja
+de linguagens, sistemas operacionais etc.
+
+Para baixar nerdfonts acesse [NerdFonts](https://www.nerdfonts.com/font-downloads).
+Depois de baixado extraía os arquivos e mova os arquivos `fonte.ttf` para a
+pasta reservada `~/.fonts`, caso ela não exista basta criar com o comando `mkdir ~/.fonts`.
+Feito isso, vá no terminal e nas preferencias altere a fonte padrão por uma das
+nerdfonts que você baixou.
+
+Para buscar os símbolos acesse [NerdFonts - Symbols](https://www.nerdfonts.com/cheat-sheet),
+na barra de pesquisa digite o símbolo desejado. Ex.: Python.
+Para usar basta copiar e colar no local que desejar.
+
+### 6.2 Personalizando a Status Bar
 
 
 ## Atividade
