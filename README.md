@@ -11,6 +11,8 @@ sudo pacman -S tmux                        # arch
 brew install tmux                          # macos
 ```
 
+---
+
 ## 2. Principais comandos do tmux
 
 ```bash
@@ -22,6 +24,8 @@ tmux attach -t nome_da_sessao        # volta para uma sessão específica
 
 tmux kill-session -t nome_da_sessao  # encerra uma sessão
 ``` 
+
+---
 
 ## 3. O coração do tmux `.tmux.conf`
 
@@ -39,6 +43,8 @@ set -g mouse on
 Essa configuração irá ativar o mouse globalmente, a partir de agora em todas as sessões
 será possível usar o mouse.
 
+---
+
 ## 5. Atalhos
 
 Por padrão a tecla de atalho do tmux é `ctrl + b`, esse atalho é um pouco
@@ -53,6 +59,104 @@ bind-key C-a send-prefix
 ```
 
 Agora o atalho `ctrl + a`, que é mais confortável, irá subtituir o `ctrl + b`.
+
+## 5.1 Guia de Atalhos do tmux (Prefixo `Ctrl+b`)
+
+---
+
+### 5.1.1 Janelas
+
+| Ação | Atalho |
+|------|---------|
+| Nova janela | `Ctrl+a c` |
+| Próxima janela | `Ctrl+a n` |
+| Janela anterior | `Ctrl+a p` |
+| Última janela usada | `Ctrl+a l` |
+| Ir para janela 0–9 | `Ctrl+a 0` até `Ctrl+a 9` |
+| Renomear janela | `Ctrl+a ,` |
+| Listar janelas | `Ctrl+a w` |
+| Fechar janela | `exit` |
+
+---
+
+### 5.1.2 Painéis
+
+| Ação | Atalho |
+|------|---------|
+| Dividir verticalmente | `Ctrl+a =` |
+| Dividir horizontalmente | `Ctrl+a -` |
+| Ir para painel esquerdo | `Ctrl+a ←` |
+| Ir para painel direito | `Ctrl+a →` |
+| Ir para painel acima | `Ctrl+a ↑` |
+| Ir para painel abaixo | `Ctrl+a ↓` |
+| Alternar entre painéis | `Ctrl+a o` |
+| Mostrar números dos painéis | `Ctrl+a q` |
+| Fechar painel | `exit` |
+| Trocar painel de lugar | `Ctrl+a }` ou `Ctrl+a {` |
+| Tornar painel uma janela | `Ctrl+a !` |
+| Alternar layouts | `Ctrl+a Space` |
+| Zoom no painel | `Ctrl+a z` |
+
+---
+
+### 5.1.3 Redimensionamento
+
+| Ação | Atalho |
+|------|---------|
+| Entrar no prompt de comando | `Ctrl+a :` |
+| Redimensionar painel | `resize-pane -L/R/U/D N` |
+
+Exemplo:
+
+```tmux
+resize-pane -L 5
+resize-pane -R 5
+resize-pane -U 5
+resize-pane -D 5
+```
+
+---
+
+### 5.1.4 Copy Mode
+
+| Ação | Atalho |
+|------|---------|
+| Entrar em copy mode | `Ctrl+a [` |
+| Colar buffer | `Ctrl+a ]` |
+| Sair do copy mode | `q` ou `Esc` |
+| Iniciar busca | `/` |
+| Próxima ocorrência | `n` |
+| Ocorrência anterior | `N` |
+
+---
+
+### 5.1.5 Informações e Ajuda
+
+| Ação | Atalho |
+|------|---------|
+| Listar atalhos | `Ctrl+a ?` |
+| Mostrar relógio | `Ctrl+a t` |
+| Mostrar informações da sessão | `Ctrl+a s` |
+| Escolher janela visualmente | `Ctrl+a w` |
+
+---
+
+## 5.2 Atalhos Mais Usados no Dia a Dia
+
+| Ação | Atalho |
+|------|---------|
+| Detach | `Ctrl+a d` |
+| Nova janela | `Ctrl+a c` |
+| Split vertical | `Ctrl+a =` |
+| Split horizontal | `Ctrl+a -` |
+| Navegar entre painéis | `Ctrl+a` + setas |
+| Zoom painel | `Ctrl+a z` |
+| Copy mode | `Ctrl+a [` |
+| Colar | `Ctrl+a ]` |
+| Listar janelas | `Ctrl+a w` |
+| Ajuda | `Ctrl+a ?` |
+
+---
 
 ## 6. Personalização
 
@@ -74,6 +178,7 @@ Para usar basta copiar e colar no local que desejar.
 
 ### 6.2 Personalizando a Status Bar
 
+---
 
 ## Atividade
 
