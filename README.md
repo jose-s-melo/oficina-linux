@@ -60,7 +60,7 @@ bind-key C-a send-prefix
 
 Agora o atalho `ctrl + a`, que é mais confortável, irá subtituir o `ctrl + b`.
 
-## 5.1 Guia de Atalhos do tmux (Prefixo `Ctrl+b`)
+## 5.1 Mapa de atalhos do tmux
 
 ---
 
