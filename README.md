@@ -219,7 +219,7 @@ e corrija-o. Salve o arquivo e execute.
 No painel da parte inferior execute o comando `top -p pid_do_programa`. Obs.: Para sair do top
 basta clicar na tecla 'q'.
 
-Feche o terminal clicando no X da janela.
+Feche o aplicativo do terminal clicando no X da janela.
 
 Abra novamente o terminal e execute:
 
