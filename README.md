@@ -176,8 +176,6 @@ Para buscar os símbolos acesse [NerdFonts - Symbols](https://www.nerdfonts.com/
 na barra de pesquisa digite o símbolo desejado. Ex.: Python.
 Para usar basta copiar e colar no local que desejar.
 
-### 6.2 Personalizando a Status Bar
-
 ---
 
 ## Atividade
