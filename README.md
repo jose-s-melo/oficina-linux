@@ -215,7 +215,7 @@ Esse código possui um erro! Tente executar esse código no terminal superior à
 e corrija-o. Salve o arquivo e execute.
 
 No painel da parte inferior execute o comando `top -p pid_do_programa`. Obs.: Para sair do top
-basta clicar na tecla 'q'.
+basta clicar na tecla `q`, mas não saia do top ainda.
 
 Feche o aplicativo do terminal clicando no X da janela.
 
